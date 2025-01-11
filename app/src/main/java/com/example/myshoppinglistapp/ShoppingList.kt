@@ -76,7 +76,7 @@ fun ShoppingListApp() {
                     ShoppingListItem(item = item,
                         onEditClick = {
                         //finding out which item we are editing and changing is "isEditing boolean to true
-                        sItems = sItems.map { it.copy(isEditing = it.id == item.id) }
+                        sItems = sItems.map { it.copy(isEditing = it.id == item.id ) }
                     }, onDeleteClick = {
                         sItems = sItems - item
                     })
